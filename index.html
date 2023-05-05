@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Centre Hospitalier Nganda</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="/images/logo.png" rel="icon">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg  bg-body-tertiary  sticky-top rounded" aria-label="Thirteenth navbar example">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11"
+                aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                <a class="navbar-brand col-lg-3 me-2 mt-sm-2 " href="/"> <img src="/images/logo.png" alt=""> </a>
+                <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="radio.html">Radiothérapie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stage.html">Demande de stage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resultal.html">Mes résultats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="about.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+                <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                    <button class="btn my-btn rounded-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Prendre rendez-vous</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+<div class="modal fade rounded-4" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Prenez rendez-vous pour visiter nos médecins  </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="" method="post">
+            <div class=" ">
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput"
+                            placeholder="name@example.com">
+                        <label for="floatingInput">Votre nom</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="">
+                        <label for="floatingInput">Votre email</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="">
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="floatingInput"
+                            placeholder="name@example.com">
+                        <label for="floatingInput">Numéro de téléphone</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <select name="" id="" class="form-control">
+                            <option value="">test 1 </option>
+                            <option value="">test 1 </option>
+                            <option value="">test 1 </option>
+                        </select>
+                        <label for="floatingInput">Service</label>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="floatingInput"
+                            placeholder="name@example.com">
+                        <label for="floatingInput">Date</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="time" class="form-control" id="floatingInput"
+                            placeholder="name@example.com">
+                        <label for="floatingInput">Heure</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="">
+                <button class="btn btn-lg contact-btn w-100 text-center"> Envoyer</button>
+            </div>
+
+        </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+          <button type="button" class="btn btn-primary">Envoyer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <main>
+
+        <swiper-container class="mySwiper"
+        pagination="true" autoplay-delay="2500" >
+            <swiper-slide>
+                <div class=" text-bg-dark " >
+                    <img src="/images/1.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="row p-md-5 mx-auto  px-3">
+                            <div class="col-md-6 mt-md-5 p-md-5 text-start ">
+                                <h2 class="card-title mt-md-4 fw-bold">Notre équipe s’engage à vous fournir les
+                                    meilleures service de soins de santé 24/24. </h2>
+                                <p class="card-text ">Votre santé, notre priorité </p>
+                                <a href="#" class="btn  my-btn rounded-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Prendre un rendez-vous</a>
+                            </div>
+                        </div>
+                      
+
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class=" text-bg-dark ">
+                    <img src="/images/1.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="row p-md-5 mx-auto">
+                            <div class="col-md-6 mt-md-5 p-md-5 text-start ">
+                                <h2 class="card-title mt-md-4 fw-bold">Notre équipe s’engage à vous fournir les
+                                    meilleures service de soins de santé 24/24. </h2>
+                                <p class="card-text ">Votre santé, notre priorité </p>
+                                <a href="#" class="btn my-btn btn-lg rounded-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Prendre un rendez-vous</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class=" text-bg-dark ">
+                    <img src="/images/1.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="row p-md-5 mx-auto">
+                            <div class="col-md-6 mt-md-5 p-md-5 text-start ">
+                                <h2 class="card-title mt-md-4 fw-bold">Notre équipe s’engage à vous fournir les
+                                    meilleures service de soins de santé 24/24. </h2>
+                                <p class="card-text ">Votre santé, notre priorité </p>
+                                <a href="#" class="btn btn-lg my-btn rounded-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Prendre un rendez-vous</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </swiper-slide>
+
+        </swiper-container>
+
+        <section class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="card rounded-4">
+                                <img src="/images/1.png" class="rounded-4" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card rounded-4">
+                                <img src="/images/1.png" class="rounded-4" alt="...">
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 py-3">
+                            <div class="card rounded-4">
+                                <img src="/images/1.png" class="rounded-4" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="text-info">A propos de nous </h5>
+                    <p class="my-title">
+                        Le Centre Hospitalier Nganda a été le premier centre médical privé à introduire le scanner en
+                        RDC et aujourd’hui, il est encore le premier et unique centre à offrir la radiothérapie dans son
+                        panel de soins en RDC.
+                    </p>
+                    <a href="" class="btn my-btn btn-lg rounded-4">En savoir plus </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="container-fluid px-4  mb-4">
+
+            <p class="title">Nos services </p>
+            <p class="subtitle">nous accordons la plus haute importance à fournir des soins et des services médicaux de
+                haute qualité à
+                nos patients </p>
+
+            <div class="container text-center">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                    <div class="col">
+                        <div class="card my-card  mb-2">
+                            <div class="card-body">
+                                <svg width="60" class="card-img-top" height="60" viewBox="0 0 60 60" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="60" height="60" fill="url(#pattern0)" />
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_8_54" transform="scale(0.02)" />
+                                        </pattern>
+                                        <image id="image0_8_54" width="50" height="50"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEgUlEQVR4nO1ZzY9URRBvMKiYwDqvanZdhZg1YIxooifjgZMaPzABMXvRADcuuhoSlsWdqeoD3hRP/AN6MYbEqPGgMSviB4h8SIwfqzchxEQOIrAEfPVoU+/1ezszy2Nm54N9o/tLKtl0T9WrX1d1dXWvMYv4HyMkeCxifF8YTwnBTCyMp3QstMHjph/gKHhEGK9GjO5aonOOSo+aokO4POad/shVhkacHb4tlsrQSET4oSfzqik6IsY3YmcJdjfOCcNETJLwTVN0RAzvJqsOLzbOSRVeSKIF75miQxi+ztsfNfvkkCk6hPD3pkQIT5uiQxguq7POltc0zumYj8g/pugQxvMxkdcGhxrnnC3f4SPytyk6IsKpZqkVEU6ZoiMk3NCMSEi4wfQDIoY9+URgj+knxJEhnBKCCyr6d99EYhFFgTNmSUj4dET4jjD8JgyX8k91uCQEv0aMb4e2/JTqmiLAWbxXGL5oWnLzT/kDroprF5ZEFR8WgrO+2/1Du1tng/vdjlXLc3V2rFquv9HuWHV8lP50tvzQjfU+dcgO3pOSiBg/cBOlgXnbmCgNZHcUgrNqszfe5jlgg5XC+KM/Fz52282ytm1tN8vUhk+zn9R2d73N+7A1S/X255u/n9uJRCPcOKwQhh/8wnziRs1NpteIGPZmeV0ZGsmc2T1QEsZvheHLZjaE4BshPKo6mX5laERtJr0YvNVLDiak8vM+Ba44wvWZE/buW4XgoJ872syOEBz3++Kg6mZ2CNer7bgfs8HmnhERhpNJNMpjsyTM0ohgf3phcpXS6mZ2XKW0Wn/rV3+/2si+QcHLPuInekeEYCa5NA1jNsblUb+6F1x18MFWbTlbeiDuwZKFGZ0dH0Zvb6YXHBKnCb73q7Vl9sNwn974hFH0XJnXGcQoqqs2sm9Ug629jwgH23wKndFKk47r8076qNBKy+GMWaIb3lepvXXVi/BMYivY1jMisQOMhxrfpuocqAZb214QTitiawvSEepSolpaN+scbPFOHGtmQxiPzUnRamldOynaESLCfVnD51dOHxs8kXPN9IXxXO0DRZJqeMBHel9PnHZja27RcusPu4vtdrnz6ogZLgrhYS3Fzpqbc50LLT4bX0NjhfxrqJsM7krPjoUSYTjhLNw5h0RE8HorDwNJJPwBSPhLSLCxdmP2Em4cVoQWNgnjtD9TjtdFJo5EwvKyEOx0kzisIgzj6QthGhkhfCUl4ezA7TeCQCP0uxkZhpeyiYjxc89wZ6OSEOyqfTwTwiMJMdhoFhChDTb7BT089zlzEocbFTQPfdU5H//Wtw/XSich+GoeV9krwvhdaPGZdog4G6ys9au+7F2PCOFf3SRSK+2Sibz+7ADhZz7fxq/z36RP61LLwibTAXST6v3cL9KRrhAJqfxkzWbfpVFQURI+Ba6GFDxR307jdKebXaOang9dIaIQRsqv2VipK7/pBYhxOqTguXbu00lEcNITOWm6QUSyjrM/xTQy61cxuSHqE0T/eSJRn4rp9CArgkgL72WLMAuAfwGzZ9coEweD+gAAAABJRU5ErkJggg==" />
+                                    </defs>
+                                </svg>
+                                <h4 class="card-title mt-2">Chirurgie</h4>
+                                <p class="card-text">
+                                    La chirurgie générale est un vaste domaine de la chirurgie et le chirurgien
+                                    généraliste maintient une
+                                    vision holistique des affections chirurgicales
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card my-card  mb-2">
+                            <div class="card-body">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="60" height="60" fill="url(#pattern0)" />
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_10_78" transform="scale(0.02)" />
+                                        </pattern>
+                                        <image id="image0_10_78" width="50" height="50"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADzElEQVR4nO2aW4iNURTHf3PGHOMeCW9uL2LGeKTILUm555KEkpLjNsMLg0TSNORSpig8MIgXT7wqlzdkBsMMQ7k8oCEz4zKTZrSn/6ftazjf7ZxPOf/66nTO3muvtfda/72+tQ7kkEMOmcRgYDawC7gC3AFeAR+BNqATaAaagMfAdaAKWAdMAPKJCT2BucBZ4KUUDfMYgy8DK4DCTCufB8wCLgKfXYq0ADeBo8AqYDIwChgoow36A0OAImAeUAZUAw0uWebUjgPFURtQKBd46FrwLlAuxRIh1xgOpIBbrjVuABPDGpAvA95agt8AO4ERZA5mY6pcp34VGBtE2EygzhJ0T/5bQPbQV+TRLB3agX1A0stk48engQ5Nfg4sV3zEhaHAKeCHdHoAlPxtQokVeN+BPV6tzwCSwDIRy1Og1RU7X0Uq3eKDBtUG9ceIsBho9Ejbh7rzlgPAEaBXPPp3MV+lpWQNsEWb2gfoDYwRu9VY485EwJqRotJy6/VplMvTmC+as59/BIstI6b6mDdNKZAhpznEjKQVE2aX/WKj5j4BehAjllkxkQh4cT+UDHOyseGSlNgcQkaZZJzzw+et+nxBv4W9a+qlRBjKHycZRq/AfG5u/0UhlHBSkH4hZPSz3nk883kf7cBWXZ7OuIqAPp4xQyp98Ln5bYPGOsbE4VpFbtcKw+eOMQt9KnFB88wJhw3281HweUpzn/lM9x36rQ1Bv48kY0nUfN4l0COSIoxOualfbNLcBmcDL+oLE9hBUSoZ5l3cDxZZLm3c1CumWynK/KzxeRpUWMak0pSI8nUSTqnpYFZo0CMSljGdctNSbU5fPUUKbCcmOmRE4l8yxIFhvWceLuIG250yzucBUSDCqFZW26KnThS75G/MWC0lzHEGxbZ0yVs2sNTyzfwo+DwuFFhVFPOyEprP48QCMUGbzxSlWz6PGxXa2ValKnlB+TxuJNQusNP4lJXGe+bzLKK3OgGmpPUbzCkc9lgk+yOfZwnjrPeid38atFrlSXcvxBOfZxg9gb2WW9enqwlPsCp7ppB8UoXluJCnzsALy61Pec1IkqrmtVspSLniJVtIAiuB+5Z31Ppk118Yq6aLI+izmjIm+DOFkcBuV8PpNbA2iibqJLXF7Ni5pYvULBwGRrliNXnuudaokQGRN0yL1bhsci3YqBe17bpkxwPDgAGaV6hG6WhgCrAGOKbNMGRiy/qk3G0GWUChAvByN0YFeRrVOZsTY7OpyzVK1Eg9AVzTnwTeWw3Ob+qtmx79bZVNd6j9PSguxXPI4X/AT9ojlRaCVXXkAAAAAElFTkSuQmCC" />
+                                    </defs>
+                                </svg>
+
+                                <h4 class="card-title mt-2">Radiothérapie</h4>
+                                <p class="card-text">
+                                    Nous pratiquons un traitement locorégional des cancers
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card my-card  mb-2">
+                            <div class="card-body">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="60" height="60" fill="url(#pattern0)" />
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_10_70" transform="scale(0.015625)" />
+                                        </pattern>
+                                        <image id="image0_10_70" width="64" height="64"
+                                            xlink:href="data:image/png;base64,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" />
+                                    </defs>
+                                </svg>
+
+                                <h4 class="card-title mt-2">Cardiologie</h4>
+                                <p class="card-text">
+                                    Le département de cardiologie est une unité de pointe offrant une gamme complète
+                                    d’investigations et de traitements cardiaques non invasifs et invasifs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card my-card  mb-2">
+                            <div class="card-body">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="60" height="60" fill="url(#pattern0)" />
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_10_72" transform="scale(0.0333333)" />
+                                        </pattern>
+                                        <image id="image0_10_72" width="30" height="30"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAACKklEQVR4nO2WPUhWURjHf1kohamLWTq1RAilQwiVi9jgljnV4lDUotkoONSSLg5C0Nbq4pAQOlgEUfiRmEjRFzQU6WJU4AfqG/XGgf+Bw+G+7z3n+uLkHx4u557nPr/7POcT9lVYp4F+YAr4BuwAW8BXYBQ4T4nVBDwB/gH5FBsuFfQWsB0AdO2HfrQlK/RuJNC3HHAtFtoWWNo029ZQBekA8K4EUGvPwrDQvguImfEPE96fCQE/yAj9BZwCDgNfvL57IeCZDFCzls85MW5kKfdqIOwvMA30AUe8GOXAT8d3OQRcaN1+Bx4DA0AHUJsSZ8z5disE7AOfemUM1U0vTqpc5wmgjGw6BDQDd4DPseALlEZlseDKiOAVwG1gDtiQzQK9mmzB4Bg1AEtFVsAiUJ8WxC6DuohMLfQ9cBk4ChwHrurszgNv0jKfkuMIcFDvJov498n/A1Cd0P/CybynGLhVR5rNwMIL6bV8TaZJegWsyMeMeVF16EDPq1xW0wrkal1+prxWQ5pcg2rXyWeNAF2X8x8HZp4vPb+1BPC6B6pW2/xMqkyJ3+qDlYSS23Gfk0+n0zco+H21u0JLbdXoZDQOPE8oda/6PxaYXDXauYxPNxG6CPx2ZqY5vc46J1K51qnp+wRcAapkXQ40B5wgUie9ZWHNZIs2BwtPspye5kp1jAy6BDxSZhvabJqczHt0kTDju6kx7Vam9h6XGZ5VBmbh83sJtvAFU4n/M6k1rz2MfDMAAAAASUVORK5CYII=" />
+                                    </defs>
+                                </svg>
+
+                                <h4 class="card-title mt-2">Dermatologie</h4>
+                                <p class="card-text">
+                                    Nos médecins diagnostiquent et traitent les maladies de la peau (y compris le
+                                    mélanome et le cancer de la peau non mélanique) ainsi que les maladies
+                                    inflammatoires telles que l’eczéma, le psoriasis et les infections.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="" class="btn btn-lg my-btn mt-2">Consulter tous nos service</a>
+            </div>
+        </section>
+
+        <section class="section-bg">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mt-4 mb-4"> Notre centre de radiothérapie </h2>
+                    <div class="col-md-6 mb-3 ">
+                        <div class="card rounded-4">
+                            <img src="/images/1.png" class="rounded-4" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card rounded-4">
+                            <img src="/images/1.png" class="rounded-4" alt="...">
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+            </div>
+
+
+        </section>
+
+        <section class="container py-4 mt-4 mb-2 ">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="contact-text p-2">Nos contacts </h2>
+                    <div class="contact-card  p-3 mb-3">
+                        <div class="d-flex align-items-stretch">
+                            <div class="">
+                                <div class="px-3 py-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="46" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" class="text-white" stroke-linejoin="round"
+                                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                            <div class="">
+                                <p class="contact-card-text">Appelez nous maintenant</p>
+                                <p class="contact-card-text">+243 897 000 133</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-card  p-3 mb-3">
+                        <div class="d-flex align-items-stretch">
+                            <div class="">
+                                <div class="px-3 py-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="46" class=" text-white"
+                                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                </svg>
+                                </div>
+
+                            </div>
+                            <div class="">
+                                <p class="contact-card-text">ADRESSE</p>
+                                <p class="contact-card-text">N°3816 , av haute Tension,Q/Nganda C/Kitambo Kinshasa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-card  p-3 mb-3">
+                        <div class="d-flex align-items-stretch">
+                            <div class="">
+                                <div class="px-3  py-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  width="44" height="46" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" class=" text-white" stroke-linejoin="round"
+                                            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                            <div class="">
+                                <p class="contact-card-text">Écrivez-nous maintenant</p>
+                                <p class="contact-card-text-email">reception@centrehospitaliernganda.com</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                  
+                </div>
+                <div class="col-md-6 ">
+                    <h2 class="contact-text mb-3 ">Prenez rendez-vous pour visiter nos médecins </h2>
+                    <div class="row g-2 ">
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Votre nom</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="">
+                                <label for="floatingInput">Votre email</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Numéro de téléphone</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                <select name="" id="" class="form-control">
+                                    <option value="">test 1 </option>
+                                    <option value="">test 1 </option>
+                                    <option value="">test 1 </option>
+                                </select>
+                                <label for="floatingInput">Service</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                <input type="date" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Date</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                <input type="time" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Heure</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="">
+                        <button class="btn btn-lg contact-btn w-100 text-center"> Envoyer</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+           <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta text-white">
+        <div class="container" data-aos="zoom-in">
+  
+          <div class="row">
+            <div class="col-lg-9 text-center text-lg-start">
+              <h3>Appels à l'action</h3>
+              <p>En cas d'urgence médicale, composez le +243 897 000 133</p>
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle" href="tel:+243 897 000 133">Appeler maintenant</a>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End Cta Section -->
+
+        <section class="container py-4">
+            <div class="row">
+                <div class="col-md-4 mb-2">
+                    <div class="vision-card p-2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title vision-title mb-2  ">VISION</h5>
+                            <p class="card-text">
+                                Devenir un hôpital top mind en Afrique à une participation ouvertement congolaise
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="vision-card p-2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title vision-title mb-2  ">MISSION</h5>
+                            <h5>MISSION DE RECONCILIATION</h5>
+                            <p class="card-text">
+                                Garantir une qualité de soins dans un environnement ou le secteur de santé est mal coté
+                            </p>
+                            <p class="card-text">
+                                Objectif : Que les congolais aient confiance en la médecine pratiquée en RDC
+                            </p>
+                            <h5>MISSION DE FACILITAION</h5>
+                            <p class="card-text">
+                                Appuyer l'accessibilité aux soins de qualité dans un environnement ou la qualité coûte
+                                cher.
+                            </p>
+                            <p class="card-text">
+                                Objectif : que les congolais aient droit à la qualité des soins optimale et à des coûts
+                                avantagés
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="vision-card p-2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title vision-title mb-2  ">NOS VALEURS</h5>
+
+                            <h5>Famille</h5>
+                            <h5>Innovation</h5>
+                            <h5>Exigence</h5>
+                            <h5>Responsabilité</h5>
+                            <h5>Travail</h5>
+                            <h5>Excellence</h5>
+                            <h5>Fierté</h5>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-3">
+            <div class="newslatter   text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-6">
+                        <h2>Souscrivez à la newsletter</h2>
+                        <p> recevez les dernières actualités du centre hospitalier nganda</p>
+                        <form action="" method="post">
+                          <input type="email" name="email"><input type="submit" value="Souscrire">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- <h1 class="text">Souscrivez à la newsletter et recevez nos dernières actualités</h1>
+                <div class="btn-group mb-4" role="group" aria-label="">
+                    <input type="email" class="form-control rounded-start-4 " name="" id="" aria-describedby="helpId"
+                        placeholder="votre adresse email">
+                    <a href="" class="btn rounded-end-4 btn-primary"> Envoyer</a>
+                </div> -->
+            </div>
+
+
+        </section>
+
+        <section class="blog mb-5">
+
+            <h1 class="blog-tile">Actualité</h1>
+
+            <div class="container ">
+                <div class="row mb-5">
+                    <div class="col-md-4 mb-3">
+                        <div class="card rounded-4">
+                            <img src="https://dummyimage.com/180x120/dbdbdb/787878.png&text=Image+cap"
+                                class="rounded-4 card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">le 23/11/2022 à 19:11</h5>
+                                <p class="card-text">
+                                    Le centre hospitalier Nganda est à la recherche d’une personne dynamique pour le
+                                    poste de technicien de laboratoire.
+                                </p>
+                                <a href="#" class="btn btn-primary">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card rounded-4">
+                            <img src="https://dummyimage.com/180x120/dbdbdb/787878.png&text=Image+cap"
+                                class="rounded-4 card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">le 23/11/2022 à 19:11</h5>
+                                <p class="card-text">
+                                    Le centre hospitalier Nganda est à la recherche d’une personne dynamique pour le
+                                    poste de technicien de laboratoire.
+                                </p>
+                                <a href="#" class="btn btn-primary">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card rounded-4">
+                            <img src="https://dummyimage.com/180x120/dbdbdb/787878.png&text=Image+cap"
+                                class="rounded-4 card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">le 23/11/2022 à 19:11</h5>
+                                <p class="card-text">
+                                    Le centre hospitalier Nganda est à la recherche d’une personne dynamique pour le
+                                    poste de technicien de laboratoire.
+                                </p>
+                                <a href="#" class="btn btn-primary">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-4 evenement">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="display-5">les événements</h1>
+                </div>
+                <div class="col-md-8">
+
+                    <swiper-container class="mySwiper" pagination="true" autoplay-delay="2500"
+                        pagination-clickable="true" slides-per-view="1" space-between="30" free-mode="true">
+                        <swiper-slide class="rounded-5">
+                            <div class="card bg-inverse ">
+                                <img class="card-img" src="/images/1.png" alt="Card image cap">
+                                <div class="card-img-overlay h-100 d-flex flex-column justify-content-end text-white">
+                                    <p class="card-title mt-auto ">“Nous avons rendu visite à l’établissement les amis
+                                        de Daniel
+                                        qui depuis 8ans accompagne les enfants vivants avec handicap mental de
+                                        bénéficier d'un suivi psychologique, physique et mental par l’apprentissage des
+                                        matières scolaires “</p>
+                                    <p>le 21 Mars 2023 </p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide class="rounded-5">
+                            <div class="card bg-inverse ">
+                                <img class="card-img" src="/images/1.png" alt="Card image cap">
+                                <div class="card-img-overlay h-100 d-flex flex-column justify-content-end text-white">
+                                    <p class="card-title mt-auto ">““Nous saluons les accomplissements des femmes des
+                                        quatre coins du monde mais surtout celles de tout le groupe SULU “ “</p>
+                                    <p>le 08 Mars </p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+
+                    </swiper-container>
+
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class=" footer">
+            <div class="container p-md-5 row">
+                
+                <div class="col-md-8 text-white mr-5">
+                    <h5 class="text-info">A propos de nous </h5>
+                    <p class=" fw-bold">
+                        Le Centre Hospitalier Nganda a été le premier centre médical privé à introduire le scanner en
+                        RDC et aujourd’hui, il est encore le premier et unique centre à offrir la radiothérapie dans son
+                        panel de soins en RDC.
+                    </p>
+                    <h5 class="text-info">ADRESSE </h5>
+                    <p class=" ">
+                        N°3816 , av haute Tension/Nganda
+                         C/Kintambo Kinshasa
+                    </p>
+                    <h5 class="text-info">CONTACT </h5>
+                    <p class="">
+                        Administration : +243 897000130 <br>
+                        Réception & urgence: +243 897 000 133 <br>
+                        Service Home care : +243 897000133 <br>
+                        Email: reception@centrehospitaliernganda.com
+                    </p>
+                </div>
+               
+                <div class="col-md-4 px-5 ">
+                    <h3>Reseaux sociaux</h3>
+                    <ul class="list-unstyled d-flex  ">
+                        <li class="ms-3"><a class="link-dark" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg>
+                            </a></li>
+                        <li class="ms-3 text-danger"><a class="link-dark" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 256 256">
+                                    <rect width="256" height="256" fill="none" />
+                                    <circle cx="128" cy="128" r="32" />
+                                    <path
+                                        d="M172,28H84A56,56,0,0,0,28,84v88a56,56,0,0,0,56,56h88a56,56,0,0,0,56-56V84A56,56,0,0,0,172,28ZM128,176a48,48,0,1,1,48-48A48,48,0,0,1,128,176Zm52-88a12,12,0,1,1,12-12A12,12,0,0,1,180,88Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="ms-3"><a class="link-dark" href="#">
+                                <svg style="color: blue" width="35" height="35" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-twitter"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                                        fill="blue"></path>
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class=" text-center   border-top">
+                <p>	&#169; Copyright Centre Hospitalier Nganda Kinshasa. <script>
+                    var CurrentYear = new Date().getFullYear()
+                    document.write(CurrentYear)
+                </script> All Rights Reserved</p>
+                <p> Designed by Juayaafrika</p>
+                
+              </div>
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <!-- <script src="/js/app.js"></script> -->
+    <script src="/js/bootstrap.bundle.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+
+</body>
+
+</html>
